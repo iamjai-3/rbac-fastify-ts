@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1701180062786,
+      "tag": "0000_premium_luminals",
+      "breakpoints": false
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1701181124990,
+      "tag": "0001_quick_korg",
+      "breakpoints": true
+    }
+  ]
+}

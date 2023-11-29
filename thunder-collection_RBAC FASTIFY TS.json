@@ -1,0 +1,158 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "RBAC FASTIFY TS",
+  "dateExported": "2023-11-29T15:08:46.835Z",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "_id": "7d51665e-a364-42ee-8f66-61acba0d91af",
+      "colId": "b9ca6521-a3d8-4a9c-935b-22afa39dc48c",
+      "containerId": "",
+      "name": "Create application",
+      "url": "{{host}}/api/applications",
+      "method": "POST",
+      "sortNum": 5000,
+      "created": "2023-11-28T14:28:41.714Z",
+      "modified": "2023-11-29T13:32:06.732Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\":\"App three\",\n  \"description\":\"hello\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "733ce5a8-bcc4-4f32-8bbb-5c2daac9fb75",
+      "colId": "b9ca6521-a3d8-4a9c-935b-22afa39dc48c",
+      "containerId": "",
+      "name": "Get applications",
+      "url": "{{host}}/api/applications",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2023-11-28T14:28:41.712Z",
+      "modified": "2023-11-29T12:44:26.603Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "167412ef-dec4-4fac-bc60-62ebf23b2ded",
+      "colId": "b9ca6521-a3d8-4a9c-935b-22afa39dc48c",
+      "containerId": "",
+      "name": "Get me",
+      "url": "http://0.0.0.0:3000/api/users/me",
+      "method": "GET",
+      "sortNum": 15000,
+      "created": "2023-11-28T14:28:41.720Z",
+      "modified": "2023-11-28T14:28:41.720Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "{{authorization}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "formdata",
+        "raw": "",
+        "form": [],
+        "files": [
+          {
+            "name": "",
+            "value": "/home/tom/projects/media-api/test/mailchimp-6kajEqr84iY-unsplash.jpg"
+          }
+        ]
+      },
+      "tests": []
+    },
+    {
+      "_id": "8d0a7ca5-1602-45d7-b2ed-f6b51f358323",
+      "colId": "b9ca6521-a3d8-4a9c-935b-22afa39dc48c",
+      "containerId": "",
+      "name": "Create user",
+      "url": "{{host}}/api/users",
+      "method": "POST",
+      "sortNum": 20000,
+      "created": "2023-11-28T14:28:41.713Z",
+      "modified": "2023-11-29T14:08:17.812Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"email\": \"test3@test.com\",\n  \"name\": \"Jane Doe 3\",\n  \"password\": \"123456\",\n  \"applicationId\": \"4c859be7-33c6-403e-93f3-31182828dc30\",\n  \"initialUser\": false\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "1423cecd-b203-44f3-8b66-4d96b78a1d64",
+      "colId": "b9ca6521-a3d8-4a9c-935b-22afa39dc48c",
+      "containerId": "",
+      "name": "Login",
+      "url": "{{host}}/api/users/login",
+      "method": "POST",
+      "sortNum": 35000,
+      "created": "2023-11-28T14:28:41.716Z",
+      "modified": "2023-11-29T14:54:25.969Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"email\": \"{{email}}\",\n  \"password\": \"{{password}}\",\n  \"applicationId\": \"{{applicationId}}\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "cdcbd851-b354-40a4-a573-fcadad3094ff",
+      "colId": "b9ca6521-a3d8-4a9c-935b-22afa39dc48c",
+      "containerId": "",
+      "name": "Create role",
+      "url": "{{host}}/api/roles",
+      "method": "POST",
+      "sortNum": 40000,
+      "created": "2023-11-28T14:28:41.715Z",
+      "modified": "2023-11-29T14:56:36.173Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "{{authorization}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"applicationId\": \"{{applicationId}}\",\n  \"permissions\": [\n   \"post:delete\",\n  \"post:edit-own\"\n  ],\n  \"name\": \"Post Moderator 2\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "2f27a426-e8b8-4e6c-9cdb-93f4fb8e4b3c",
+      "colId": "b9ca6521-a3d8-4a9c-935b-22afa39dc48c",
+      "containerId": "",
+      "name": "Assign role to user",
+      "url": "http://0.0.0.0:3000/api/users/roles",
+      "method": "POST",
+      "sortNum": 55000,
+      "created": "2023-11-28T14:28:41.717Z",
+      "modified": "2023-11-29T15:01:28.924Z",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "{{authorization}}"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"applicationId\": \"{{applicationId}}\",\n  \"userId\": \"{{userId}}\",\n  \"roleId\": \"81953611-d136-4534-a084-91ac4c6e9b33\"\n}",
+        "form": []
+      },
+      "tests": []
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "client": "Thunder Client",
+  "environmentName": "Local",
+  "dateExported": "2023-11-29T15:09:20.890Z",
+  "version": "1.0",
+  "variables": [
+    {
+      "name": "host",
+      "value": "http://0.0.0.0:3000"
+    },
+    {
+      "name": "email",
+      "value": "test@test.com"
+    },
+    {
+      "name": "applicationId",
+      "value": "05bc93ed-8319-4955-8953-003c75c85c80"
+    },
+    {
+      "name": "email2",
+      "value": "tes2t@test.com"
+    },
+    {
+      "name": "password",
+      "value": "123456"
+    },
+    {
+      "name": "authorization",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZjNjIxMzFhLWYyZDgtNGIwOC1iYmVmLWY3ZDc1MzA5MDI0ZSIsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsImFwcGxpY2F0aW9uSWQiOiIwNWJjOTNlZC04MzE5LTQ5NTUtODk1My0wMDNjNzVjODVjODAiLCJzY29wZXMiOlsicG9zdDpkZWxldGUiLCJwb3N0OmVkaXQtb3duIiwidXNlcnM6cm9sZXM6d3JpdGUiLCJ1c2Vyczpyb2xlczpkZWxldGUiLCJyb2xlczp3cml0ZSIsInBvc3RzOndyaXRlIiwicG9zdHM6cmVhZCJdLCJpYXQiOjE3MDEyNjk2NzR9.6EhA1V3QN3EdYsWL30qmSd91hkoYqRjAMBNZdJRW3-Y"
+    },
+    {
+      "name": "roleId",
+      "value": "56e391bf-afce-403e-8ae4-461606c69abd"
+    },
+    {
+      "name": "userId",
+      "value": "fc62131a-f2d8-4b08-bbef-f7d75309024e"
+    }
+  ]
+}
